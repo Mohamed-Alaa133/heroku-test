@@ -1,0 +1,20 @@
+$main-color: #da5d41
+$secondary-color: #1d1e21
+
+// media break points
+$phone_break_point: 576px
+$tablet_break_point: 768px
+$medium_break_point: 992px
+$large_break_point: 1199px
+
+=phone
+  @media(max-width: $phone_break_point)
+    @content
+
+=medium
+  @media(max-width: $medium_break_point)
+    @content
+
+=large
+  @media(max-width: $large_break_point)
+    @content

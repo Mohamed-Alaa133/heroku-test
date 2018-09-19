@@ -1,0 +1,36 @@
+@import 'variables.sass'
+
+.service-container
+  width: 100%
+  text-align: center
+  padding: 3% 0px
+
+  .service-header
+    h3
+        font-size: 2rem
+        color: #fff
+  span
+    width: 50px
+    display: block
+    height: 2px
+    background: $main-color
+    margin: 2% auto
+  .section-container
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-gap: 3%
+    margin: 2% 0px
+    i
+      color: $main-color
+    h3
+      margin: 4% 0px
+      color: #333
+    p
+      color: #7a7a88
+      font-size: 14px
+      line-height: 1.3
+    +phone
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+      .sec
+        margin: 3% 0px
